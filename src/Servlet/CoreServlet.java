@@ -25,7 +25,8 @@ public class CoreServlet extends HttpServlet {
 	private static final long serialVersionUID = -9109463924541266127L;
 
 	/**
-	 * 请求校检
+	 * 
+	 * 客户端发送get请求时，进入此方法,请求校检
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -46,7 +47,7 @@ public class CoreServlet extends HttpServlet {
 	}
 
 	/**
-	 * 处理微信服务器发来的信息
+	 * 客户端发送psot请求时，处理微信服务器发来的信息
 	 */
 	public void doPost(HttpServletRequest reqest, HttpServletResponse response)
 			throws ServletException, IOException {

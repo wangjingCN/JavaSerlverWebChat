@@ -9,6 +9,7 @@
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   
+  <!-- 微信的核心请求 -->
   <servlet-mapping>
   <servlet-name>coreServlet</servlet-name>
   <url-pattern>/coreServlet</url-pattern>
@@ -17,5 +18,16 @@
   <servlet>
   <servlet-name>coreServlet</servlet-name>
   <servlet-class>Servlet.CoreServlet</servlet-class>
+  </servlet>
+  
+  <!-- 授权后的请求 -->
+  <servlet-mapping>
+  <servlet-name>authServlet</servlet-name>
+  <url-pattern>/authServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>authServlet</servlet-name>
+  <servlet-class>Servlet.OAuthServlet</servlet-class>
   </servlet>
 </web-app>

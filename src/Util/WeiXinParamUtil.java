@@ -13,7 +13,7 @@ public class WeiXinParamUtil {
 	// 密码
 	public static String APPSECRET = "be4b79cd2bd94e826e4abf3a54131016";
 
-	// 获取接口凭证的API,GET
+	// 获取接口凭证的API(GET)
 	public static String TOKEN_URL = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=" + APPID + "&secret=" + APPSECRET;
 
 	// 菜单创建（POST）
@@ -29,9 +29,9 @@ public class WeiXinParamUtil {
 	public final static String USER_AUTH_ACEESS_WEB_URL = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect";
 	// 获取网页授权凭证（GET）
 	public final static String OATH_ACCESS_TOKEN = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&secret=SECRET&code=CODE&grant_type=authorization_code";
-	// 刷新网页授权凭证
+	// 刷新网页授权凭证(GET)
 	public final static String REFRSEH_OATH_ACCESS_TOKEN = "https://api.weixin.qq.com/sns/oauth2/refresh_token?appid=APPID&grant_type=refresh_token&refresh_token=REFRESH_TOKEN";
-	// 通过网页授权获取用户信息
+	// 通过网页授权获取用户信息(GET)
 	public final static  String SNSUSERINFO_ACCESS_TOKEN = "https://api.weixin.qq.com/sns/userinfo?access_token=ACCESS_TOKEN&openid=OPENID";
 	
 

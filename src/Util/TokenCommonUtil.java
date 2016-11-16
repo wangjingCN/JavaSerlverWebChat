@@ -87,7 +87,7 @@ public class TokenCommonUtil {
 	}
 
 	/**
-	 * 获取访问TOKEN
+	 * 获取访问TOKEN,调用了上面的httpsRequest方法
 	 * 
 	 * @param appid
 	 * @param appsecret
